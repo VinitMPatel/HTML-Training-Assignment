@@ -142,9 +142,16 @@ display : inline;
 }
 @media only screen and (max-width:990px){
     .sub-second{
-        padding-top : 140px; 
+        padding-top : 40px; 
+        background-color: #fafafa;
     }
     .row{
         padding-top : 70px;
+    }
+    body{
+        display : flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
