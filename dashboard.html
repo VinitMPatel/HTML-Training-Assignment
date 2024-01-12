@@ -1,226 +1,283 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
-        <style>
-            .profile{
-                float : right;
-            }
-            .side-images{
-                width: 15px;
-                height: 15px;
-            }
-            .side-text{
-                width: 78px;
-                height: 21px;
-            }
-            /* .demo{
-              border : 1px solid black;
-            } */
-            .title{
-              font-size: 30px;
-              width: 146px;
-              height: 39px;
-              font-weight: bolder;
-            }
-            .col-10{
-              background-color: #fafafa;
-            }
-            .dash-info{
-              width: 220px;
-              height: 100px;
-              background-color: white;
-            }
-            .count{
-              font-size: 30px;
-              font-weight: bolder;
-            }
-            .des{
-              font-size: 15px;
-            }
-            .two-image{
-              display: flex;
-              gap : 20px;
-            }
-            .usa{
-              height : 10px;
-              width : 10px;
-              background-color: red;
-              border-radius: 50%;
-            }
-            .russia{
-              height : 10px;
-              width : 10px;
-              background-color: rgb(255, 81, 0);
-              border-radius: 50%;
-            }
-            .canada{
-              height : 10px;
-              width : 10px;
-              background-color: green;
-              border-radius: 50%;
-            }
-            .india{
-              height : 10px;
-              width : 10px;
-              background-color: yellow;
-              border-radius: 50%;
-            }
-            .i1{
-              background-color: white;
-            }
-        </style>
-    </head>
 
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light demo">
-            <img src="images/menu-bar.svg" class="mx-3">     
-            <div class="navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <img src="images/header-logo.svg">
-                </li>
-                
-                <li class="nav-item ml-5">
-                  <img src="images/search-icon.svg" height="30px" width="30px">
-                </li>
-                <input class="form-control mr-sm-2 ml-2" type="search" placeholder="Search" aria-label="Search">
-            
-              </ul>
-              <span class="profile">
-                <img src="images/notification-icon.svg" class="mx-4">
-                <img src="images/profile.png" class="ml-4"><span class="ml-2">John Due</span>
-                <img src="images/downward-arrow.svg">
-              </span>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light demo bg-white">
+    <img src="images/menu-bar.svg" class="mx-3">
+    <div class="navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <img src="images/header-logo.svg">
+        </li>
+
+        <li class="nav-item ml-5">
+          <img src="images/search-icon.svg" height="30px" width="30px">
+        </li>
+        <input class="form-control mr-sm-2 ml-2" type="search" placeholder="Search" aria-label="Search">
+
+      </ul>
+      <span class="profile">
+        <img src="images/notification-icon.svg" class="mx-4">
+        <img src="images/profile.png" class="ml-4"><span class="ml-2">John Due</span>
+        <img src="images/downward-arrow.svg">
+      </span>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-2">
+      <div class="d-flex flex-column">
+        <div class="p-2 my-2 mt-5 ml-4">
+          <img src="images/dashboard-active.svg" class="side-images"><span class="mr-2 side-text">Dashboard</span>
+        </div>
+        <div class="p-2 my-2 ml-4"><img src="images/graph-default.svg" class="side-images"><span
+            class="mr-2 side-text">Analysis</span></div>
+        <div class="p-2 my-2 ml-4"><img src="images/inbox-default.svg" class="side-images"><span
+            class="mr-2 side-text">Inbox</span></div>
+        <div class="p-2 my-2 ml-4"><img src="images/clock-default.svg" class="side-images"><span
+            class="mr-2 side-text">History</span></div>
+        <div class="p-2 my-2 ml-4"><img src="images/user-default.svg" class="side-images"><span
+            class="mr-2 side-text">Users</span></div>
+        <div class="p-2 my-2 ml-4"><img src="images/maintenance-default.svg" class="side-images"><span
+            class="mr-2 side-text">Maintenance</span></div>
+        <div class="p-2 my-2 ml-4"><img src="images/setting-default.svg" class="side-images"><span
+            class="mr-2 side-text">Settings</span></div>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="title mt-3 ml-4">Dashboard</div>
+
+      <div class="d-flex justify-content-around mt-3 mx-3 row">
+
+        <div class="dash-info d-flex align-items-center col-xl-2 col-lg-6 col-6 my-2">
+          <div class="mx-2"><img src="images/star.svg"></div>
+          <div>
+            <div class="d-flex flex-column ">
+              <div class="count">23,456</div>
+              <div class="des">new product</div>
             </div>
-          </nav>
+          </div>
+        </div>
 
-          <div class="row">
-            <div class="col-2 demo">
-                <div class="d-flex flex-column">
-                    <div class="p-2 my-2 mt-5 ml-4">
-                        <img src="images/dashboard-active.svg" class="side-images"><span class="mr-2 side-text">Dashboard</span>
-                    </div>
-                    <div class="p-2 my-2 ml-4"><img src="images/graph-default.svg" class="side-images"><span class="mr-2 side-text">Analysis</span></div>
-                    <div class="p-2 my-2 ml-4"><img src="images/inbox-default.svg" class="side-images"><span class="mr-2 side-text">Inbox</span></div>
-                    <div class="p-2 my-2 ml-4"><img src="images/clock-default.svg" class="side-images"><span class="mr-2 side-text">History</span></div>
-                    <div class="p-2 my-2 ml-4"><img src="images/user-default.svg" class="side-images"><span class="mr-2 side-text">Users</span></div>
-                    <div class="p-2 my-2 ml-4"><img src="images/maintenance-default.svg" class="side-images"><span class="mr-2 side-text">Maintenance</span></div>
-                    <div class="p-2 my-2 ml-4"><img src="images/setting-default.svg" class="side-images"><span class="mr-2 side-text">Settings</span></div>
-                  </div>
+        <div class="dash-info d-flex align-items-center col-xl-2  col-6 col-lg-6 my-2">
+          <div class="mx-2"><img src="images/new-product.svg"></div>
+          <div>
+            <div class="d-flex flex-column ">
+              <div class="count">2345</div>
+              <div class="des">Added Product</div>
             </div>
-            <div class="col-10 demo">
-                <div class="title mt-5 ml-4">Dashboard</div>
+          </div>
+        </div>
 
-                <div class="d-flex justify-content-around mt-3 mx-3 row">
+        <div class="dash-info d-flex align-items-center col-xl-2  col-6 col-lg-6 my-2">
+          <div class="mx-2"><img src="images/total-product.svg"></div>
+          <div>
+            <div class="d-flex flex-column ">
+              <div class="count">32,456</div>
+              <div class="des">total product</div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="dash-info p-2 d-flex justify-content-around align-items-center col-2">
-                    <div class="p-2"><img src="images/star.svg"></div>
-                    <div class="p-2">
-                      <div class="d-flex flex-column ">
-                        <div class="p-2 count">23,456</div>
-                        <div class="p-2 des">new product</div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="dash-info d-flex align-items-center col-xl-2 col-6 col-lg-6 my-2">
+          <div class="mx-2"><img src="images/dollar-filled.svg"></div>
+          <div>
+            <div class="d-flex flex-column">
+              <div class="count">5678</div>
+              <div class="des">Today's sale</div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="dash-info p-2 d-flex justify-content-around align-items-center col-2">
-                    <div class="p-2"><img src="images/new-product.svg"></div>
-                    <div class="p-2">
-                      <div class="d-flex flex-column ">
-                        <div class="p-2 count">2345</div>
-                        <div class="p-2 des">Added Product</div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="dash-info d-flex align-items-center col-xl-2 col-6 col-lg-6 my-2">
+          <div class="mx-2"><img src="images/money-bag.svg"></div>
+          <div>
+            <div class="d-flex flex-column ">
+              <div class="count">3,35,342</div>
+              <div class="des">Total sale</div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="dash-info p-2 d-flex justify-content-around align-items-center col-2">
-                    <div class="p-2"><img src="images/total-product.svg"></div>
-                    <div class="p-2">
-                      <div class="d-flex flex-column ">
-                        <div class="p-2 count">32,456</div>
-                        <div class="p-2 des">total product</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="dash-info p-2 d-flex justify-content-around align-items-center col-2">
-                    <div class="p-2"><img src="images/dollar-filled.svg"></div>
-                    <div class="p-2">
-                      <div class="d-flex flex-column ">
-                        <div class="p-2 count">5678</div>
-                        <div class="p-2 des">Today's sale</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="dash-info p-2 d-flex justify-content-around align-items-center col-2">
-                    <div class="p-2"><img src="images/money-bag.svg"></div>
-                    <div class="p-2">
-                      <div class="d-flex flex-column ">
-                        <div class="p-2 count">3,35,342</div>
-                        <div class="p-2 des">Total sale</div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
+      </div>
 
 
-                <div class="d-flex two-image justify-content-around mt-5 mx-5" >
+      <div class="two-image justify-content-around mt-3 mx-5">
 
-                  <div class="p-2 col-8 i1">
-                    
-                    <div class="d-flex flex-column col-12">
-                    <div class="d-flex p-2 justify-content-between">
-                      <div class="p-2">Sales</div>
-                      <div class="p-2">Weekly Monthly Yearly</div>
-                    </div>
-                    <div class="p-2">
-                      <div class="text-center">
-                        <img src="images/data-graph.png">
-                      </div>
-                    </div>
-                      
-                    </div>
-                    </div>
-                  
-                  <div class="p-2 col-4 i1">
-                    <div class="d-flex flex-column">
-                      <div class="p-2">Sales by country</div>
-                      <div class="p-2 text-center"><img src="images/pie-chart.svg"></div>
-                      <div class="p-2">
-                        <div class="d-flex justify-content-between">
-                          <div class="p-2 ml-3">
-                            <div class="align-items-center row">
-                            <div class="usa p-2"></div>
-                            <div class="p-2">United States of America</div>
-                          </div>
-                          <div class="align-items-center row">
-                            <div class="russia p-2"></div>
-                            <div class="p-2">Russia</div>
-                          </div>
-                          </div>
-                          <div class="p-2">
-                            <div class="align-items-center row">
-                              <div class="canada p-2"></div>
-                              <div class="p-2">canada</div>
-                            </div>
-                            <div class="align-items-center row">
-                              <div class="india p-2"></div>
-                              <div class="p-2">India</div>
-                            </div>
-                          </div>
-                        </div>
+        <div class="col-xl-8 bg-white">
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+          <div class="d-flex flex-column temp">
+            <div class="d-flex p-2 justify-content-between">
+              <div>Sales</div>
+              <div>Weekly Monthly Yearly</div>
+            </div>
+            <div class="p-2">
+              <img src="images/data-graph.png" width="100%">
             </div>
 
           </div>
-    </body>
+        </div>
+
+        <div class="col-xl-4 bg-white">
+          <div class="d-flex flex-column">
+            <div class="p-2">Sales by country</div>
+            <div class="p-2 text-center"><img src="images/pie-chart.svg"></div>
+            <div class="p-2">
+              <div class="d-flex justify-content-between">
+                <div class="ml-3">
+                  <div class="align-items-center row">
+                    <div class="usa p-2"></div>
+                    <div class="p-2">United States of America</div>
+                  </div>
+                  <div class="align-items-center row">
+                    <div class="russia p-2"></div>
+                    <div class="p-2">Russia</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="align-items-center row">
+                    <div class="canada p-2"></div>
+                    <div class="p-2">canada</div>
+                  </div>
+                  <div class="align-items-center row">
+                    <div class="india p-2"></div>
+                    <div class="p-2">India</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-5 i1">
+        <div class="d-flex justify-content-between mb-3">
+          <div class="pl-3 pt-4 font-weight-bold h4">Invoices</div>
+          <div class="pr-3 pt-4 text-danger">view all</div>
+        </div>
+        <div class="table-div">
+          <table class="table">
+            <thead class="border-b">
+              <th>INVOICE</th>
+              <th>COMPANY NAME</th>
+              <th>EMAIL</th>
+              <th>DUE DATE</th>
+              <th>STATUS</th>
+              <TH>AMOUNT</TH>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td>651535</td>
+                <td>public Adjusting firm</td>
+                <td>georgia.young@example.com</td>
+                <td>24 May,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$47,800</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>558612</td>
+                <td>Other</td>
+                <td>jessica.hanson@example.com</td>
+                <td>24 May,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$98,000</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>558612</td>
+                <td>Vendor</td>
+                <td>aima.lawson@example.com</td>
+                <td>8 Sep,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$20,900</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>558612</td>
+                <td>Property Management Company</td>
+                <td>kenzi.lawson@example.com</td>
+                <td>22 Oct,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$10,570</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>651535</td>
+                <td>Subcontractor Company</td>
+                <td>jackson.graham@example.com</td>
+                <td>1 Feb,2020</td>
+                <td class="fail">
+                  <div class="fdiv">Failed</div>
+                </td>
+                <td>$10,200</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>653518</td>
+                <td>Mortgage company</td>
+                <td>felicia.reid@example.com</td>
+                <td>22 Oct,2020</td>
+                <td>
+                  <div class="pendingdiv">Pending</div>
+                </td>
+                <td>$12,600</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>487441</td>
+                <td>TPA</td>
+                <td>dolores.chambers@example.com</td>
+                <td>21 Sep,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$11,170</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>267400</td>
+                <td>Fire Department</td>
+                <td>nevaeh.simmons@example.com</td>
+                <td>17 Oct,2020</td>
+                <td class="fail">
+                  <div class="fdiv">Failed</div>
+                </td>
+                <td>$28,000</td>
+              </tr>
+
+              <tr class="border-b">
+                <td>449003</td>
+                <td>Insurance Carrier</td>
+                <td>curtis.weaver@example.com</td>
+                <td>21 Sep,2020</td>
+                <td class="paid">
+                  <div class="pdiv">Paid</div>
+                </td>
+                <td>$10,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
 </html>

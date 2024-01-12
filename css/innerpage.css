@@ -1,0 +1,56 @@
+.side-images{
+    width: 15px;
+    height: 15px;
+}
+.side-text{
+    width: 78px;
+    height: 21px;
+}
+.col-10{
+    background-color: #fafafa;
+}
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.inputBox span{
+    position : absolute;
+    top : 0px;
+    padding : 15px;
+}
+.inputBox{
+    position :relative;
+}
+.inputBox input:focus ~ span{
+    transform : translateY(-10px);
+    font-size : 0.95em;
+    padding :  2px 5px;
+    margin-left : 20px;
+    background: white;
+}
+/* .inputBox input:focus ~ input{
+    border : 1px red solid;
+} */
+.temp{
+    width:100px;
+    border-radius: 20px;
+}
+.error{
+    border-radius: 5px;
+}
+.info{
+    border : 1px solid rgb(0, 195, 255);
+    border-radius: 5px;
+    color: rgb(0, 195, 255);
+}
+.warn{
+    border : 1px solid #FFA800;
+    border-radius: 5px;
+    color: #FFA800;
+}
+.succ{
+    border : 1px solid green;
+    border-radius: 5px;
+    color : green;
+}
