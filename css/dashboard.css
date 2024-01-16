@@ -2,8 +2,8 @@
     float : right;
 }
 .side-images{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 30px;
 }
 .side-text{
     width: 78px;
@@ -15,7 +15,7 @@
   height: 39px;
   font-weight: bolder;
 }
-.col-10{
+#main-content{
   background-color: #fafafa;
 }
 .dash-info{
@@ -30,10 +30,10 @@
 .des{
   font-size: 15px;
 }
-.two-image{
+/* .two-image{
   display: flex;
   gap : 20px;
-}
+} */
 .usa{
   height : 10px;
   width : 10px;

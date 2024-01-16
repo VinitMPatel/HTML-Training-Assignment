@@ -12,7 +12,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light demo bg-white">
-        <img src="images/menu-bar.svg" class="mx-3">
+        <button id="sidebar-btn" class="mx-3"><img src="images/menu-bar.svg"></button>
         <div class="navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -35,11 +35,11 @@
 
     <div class="row">
 
-        <div class="col-2">
+        <div class="col-md-2" id="sidebar-content">
             <div class="d-flex flex-column">
                 <div class="p-2 my-2 mt-5 ml-4">
                     <img src="images/dashboard-active.svg" class="side-images"><span
-                        class="mr-2 side-text">Dashboard</span>
+                        class="mr-2 side-text"><a href="dashboard.html">Dashboard</a></span>
                 </div>
                 <div class="p-2 my-2 ml-4"><img src="images/graph-default.svg" class="side-images"><span
                         class="mr-2 side-text">Analysis</span></div>
@@ -55,7 +55,7 @@
                         class="mr-2 side-text">Settings</span></div>
             </div>
         </div>
-        <div class="col-10">
+        <div class="col-md-10" id="main-content">
 
             <div class="title mt-3 ml-4">Analysis</div>
 
@@ -88,22 +88,22 @@
 
                 <div class="container-fluid row d-flex">
 
-                    <div class="form-group pt-2 inputBox col-xl-6 col-md-6">
+                    <div class="form-group pt-2 inputBox col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>Name</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-6 col-md-6">
+                    <div class="form-group pt-2 inputBox col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>UserName</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-6 col-md-6">
+                    <div class="form-group pt-2 inputBox col-lg-6 col-sm-12">
                         <input type="password" class="form-control">
                         <span>Password</span>
                     </div>
 
-                    <div class="form-group pt-2 col-xl-6 col-md-6">
+                    <div class="form-group pt-2 col-lg-6 col-sm-12">
                         <select class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -121,17 +121,17 @@
 
                 <div class="container-fluid row d-flex">
 
-                    <div class="form-group pt-2 inputBox col-xl-4 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-4 col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>Focus</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-4 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-4 col-lg-6 col-sm-12">
                         <input type="password" class="form-control">
                         <span>Password</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-4 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-4 col-lg-6 col-sm-12">
                         <input type="text" class="form-control" disabled>
                         <span>UserName</span>
                     </div>
@@ -145,22 +145,22 @@
 
                 <div class="container-fluid row d-flex">
 
-                    <div class="form-group pt-2 inputBox col-xl-3 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-3 col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>Designation</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-3 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-3 col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>Name</span>
                     </div>
 
-                    <div class="form-group pt-2 inputBox col-xl-3 col-md-6">
+                    <div class="form-group pt-2 inputBox col-xl-3 col-lg-6 col-sm-12">
                         <input type="text" class="form-control">
                         <span>Username</span>
                     </div>
 
-                    <div class="form-group pt-2 col-xl-3 col-md-6">
+                    <div class="form-group pt-2 col-xl-3 col-lg-6 col-sm-12">
                         <select class="form-control">
                             <option>1</option>
                             <option>2</option>
@@ -223,23 +223,23 @@
                     Snakbar
                 </div>
 
-                <div class="form-group container-fluid row ml-1 pt-2">
-                    <div class="col-xl-6 col-md-6 col-sm-12 pl-1">
+                <div class=" row form-group ml-1 pt-2">
+                    <div class="col-lg-6 col-sm-12 mt-2">
                         <div class="border border-danger text-danger error p-1"><img src="images/error-icon.svg" class="info-image"><span class="ml-2">This is an error
                                 message!</span></div>
                     </div>
 
-                    <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 mt-2">
                         <div class="info p-1"><img src="images/info-icon.svg" class="info-image"><span class="ml-2">This is an
                                 information message!</span></div>
                     </div>
 
-                    <div class="col-xl-6 col-md-6 mt-2 col-sm-12 pl-1">
+                    <div class="col-lg-6 col-sm-12 mt-2">
                         <div class="warn p-1"><img src="images/warning-icon.svg" class="info-image"><span class="ml-2">This is a warning
                                 message!</span></div>
                     </div>
 
-                    <div class="col-xl-6 col-md-6 mt-2 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 mt-2">
                         <div class="succ p-1"><img src="images/success-icon.svg" class="info-image"><span class="ml-2">This is a success
                                 message!</span></div>
                     </div>
@@ -297,9 +297,9 @@
                     </div> -->
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                          <button class="nav-link active bg-white" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tab 1</button>
+                          <button class="nav-link bg-white" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tab 2</button>
+                          <button class="nav-link bg-white" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tab 3</button>
                         </div>
                       </nav>
                       <div class="tab-content my-3" id="nav-tabContent">
